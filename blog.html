@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="row">
+    {% for post in site.posts %}
+        <a href="{{ post.url }}" class="col-4 no-style">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">{{ post.date | date: "%-d %B %Y" }}</h6>
+                    <div class="card-text">
+                        {{ post.summary }}
+                    </div>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+</div>
