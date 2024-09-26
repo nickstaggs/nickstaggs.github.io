@@ -18,4 +18,4 @@ Find a couple of journals, news sites or forums that are technology focused and 
 ### Keep a journal
 Life has a way of getting so chaotic, especially when you are working on both professional projects and side projects, that it becomes hard to keep track of everything. It seems that the only way to stay organized is to keep a journal. A journal is how I keep all my projects on schedule and know where I am in each one. I write down short term goals for a project, stuff that can be done in a week, and check them off as I finish them. I write down long term personal goals as well, like what technologies I want to learn and how long certain projects should take. I, also, jot down any cool ideas I have for apps.
 
-Thanks for reading! If you have any questions or concerns regarding this post please create on issue on [GitHub](https://github.com/nickstaggs/PortfolioPage/issues). Happy hacking!
+Thanks for reading! If you have any questions or concerns regarding this post please create on issue on [Github](https://github.com/nickstaggs/nickstaggs.github.io/issues). Happy hacking!

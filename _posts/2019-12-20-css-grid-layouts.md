@@ -144,5 +144,5 @@ In some cases having a separate mobile site may be the way to go but I feel in m
 
 Using Bootstrap, I feel, is a kop out most of the time from doing a tiny bit of work. In lieu of the tiny bit of work, you get ~20kb of fluff, most of which you don't use, to slow down your page loading. Don't worry though it's okay to be lazy sometimes, I still use these libraries to make things look pretty too. However, one thing that most of them don't do is provide a way to rearrange the layout of pages as seen above. 
 
-Using both CSS Grid and media queries as a technique to change layouts between different device sizes is the best way to do so because of its ease of use, simplistic syntax and being pure CSS. I hope you enjoyed learning about this wonderful technique and will use it in your future and current projects. As always, happy hacking!
+Using both CSS Grid and media queries as a technique to change layouts between different device sizes is the best way to do so because of its ease of use, simplistic syntax and being pure CSS. I hope you enjoyed learning about this wonderful technique and will use it in your future and current projects. Thanks for reading and if you have any questions or concerns regarding this post please create on issue on [Github](https://github.com/nickstaggs/nickstaggs.github.io/issues). As always, happy hacking!
 
