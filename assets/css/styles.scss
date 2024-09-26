@@ -54,5 +54,9 @@ a.no-style:visited, a.no-style:link {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+}
+
+p:has(> img) {
+    text-align: center;
 }
