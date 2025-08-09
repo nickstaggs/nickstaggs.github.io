@@ -32,7 +32,15 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     {% for item in site.data.navigation %}
-                                        <li><a class="dropdown-item" href="{{ item.link }}" {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.name }}</a></li>
+                                        <li>
+                                            <a 
+                                                class="dropdown-item" 
+                                                href="{{ item.link }}" 
+                                                {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                                                    {% if item.external %} {{item.icon}}{% endif %} {{ item.name }}
+
+                                            </a>
+                                        </li>
                                     {% endfor %}
                                 </ul>
                             </li>
@@ -62,20 +70,12 @@
                                 {% for item in site.data.navigation %}
                                     <li>
                                         <a href="{{ item.link }}" class="no-style" {% if page.url == item.link %}style="font-weight: bold;" {% endif %} {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
-                                            {{ item.name }}
+                                            {% if item.external %} {{item.icon}}{% endif %} {{ item.name }}
                                         </a>
                                     </li>
                                 {% endfor %}
                             </ul>
                         </nav>
-                        <div class="social-links mt-4">
-                            <a href="https://github.com/nickstaggs" target="_blank" rel="noopener noreferrer" class="d-block mb-2 no-style">
-                                <i class="bi bi-github"></i> GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/nickstaggs" target="_blank" rel="noopener noreferrer" class="d-block no-style">
-                                <i class="bi bi-linkedin"></i> LinkedIn
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <div class="col-9">
