@@ -4,7 +4,7 @@ title: About
 permalink: /about.html
 ---
 
-I am a software engineer with a focus in Kotlin, C# and Typescripy/Javascript programming languages and utilizing them build web applications in the cloud. However, I am not afraid to learn something new and to use the right tool for the job.
+I am a software engineer with a focus in Kotlin, C# and TypeScript/Javascript programming languages and utilizing them build web applications in the cloud. However, I am not afraid to learn something new and to use the right tool for the job.
 
 I love to be challenged every day; I am constantly pushing myself in and out of work to learn the art and intricacies of programming. I aim to write the most orthogonal, readable, and extensible code in order for a project to be easily maintainable and scalable for years to come.
 
