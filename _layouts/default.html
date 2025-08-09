@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.ico" />
     <script src="/assets/js/script.js"></script>
 </head>
@@ -31,7 +32,7 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     {% for item in site.data.navigation %}
-                                        <li><a class="dropdown-item" href="{{ item.link }}">{{ item.name }}</a></li>
+                                        <li><a class="dropdown-item" href="{{ item.link }}" {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ item.name }}</a></li>
                                     {% endfor %}
                                 </ul>
                             </li>
@@ -60,14 +61,21 @@
                             <ul style="list-style-type: none; padding: 0;">
                                 {% for item in site.data.navigation %}
                                     <li>
-                                        <a href="{{ item.link }}" class="no-style" {% if page.url==item.link %}style="font-weight: bold;" {% endif
-                                            %}>
+                                        <a href="{{ item.link }}" class="no-style" {% if page.url==item.link %}style="font-weight: bold;" {% endif %} {% if item.external %}target="_blank" rel="noopener noreferrer"{% endif %}>
                                             {{ item.name }}
                                         </a>
                                     </li>
                                 {% endfor %}
                             </ul>
                         </nav>
+                        <div class="social-links mt-4">
+                            <a href="https://github.com/nickstaggs" target="_blank" rel="noopener noreferrer" class="d-block mb-2 no-style">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/nickstaggs" target="_blank" rel="noopener noreferrer" class="d-block no-style">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-9">

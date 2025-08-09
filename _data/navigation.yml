@@ -6,3 +6,9 @@
   link: /blog.html
 - name: Resume
   link: /resume.html
+- name: GitHub
+  link: https://github.com/nickstaggs
+  external: true
+- name: LinkedIn
+  link: https://www.linkedin.com/in/nickstaggs
+  external: true
