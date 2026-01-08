@@ -6,32 +6,36 @@ summary: Arguments for marrying CSS Grid and media queries being the best way to
 categories: blog
 ---
 
+## {{ page.title }}
+#### {{ page.date | date: "%-d %B %Y" }}
+
+
 The best way to implement a web application with a responsive design in modern browsers where layouts must change between different screen sizes is the combination of CSS Grid and media queries. This powerful combination is pure CSS that allows the developer to rearrange components with ease using a simple, declarative syntax.
 
 This can be seen in this slightly trivialized but simple [example](https://repl.it/@NickCStaggs/CSS-Grid-Layout-Example). 
 ```css
 body {
-  display: grid;
-  grid-template-areas: 
-    "nav"
-    "main";
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "main";
 }
 
 nav {
-  grid-area: nav;
+    grid-area: nav;
 }
 
 main {
-  grid-area: main;
+    grid-area: main;
 }
 
 @media (min-width: 600px) {
-  body {
-    grid-template-areas: 
-    "nav main";
+    body {
+        grid-template-areas: 
+        "nav main";
 
-    grid-template-columns: 20% 80%;
-  }
+        grid-template-columns: 20% 80%;
+    }
 }
 ```
 As seen above in the CSS from the example, this truly is a very easy way to rearrange the layout for different device sizes. This is a mobile first design so in a mobile phone screen width device the nav in the form of a navbar will be on top with the menu hidden and the main content below it. For screen sizes that are not mobile, greater than 600 px in this case, the nav will be a side nav on the left taking up 20% of the screen with the main content on the right taking up 80% of the screen. 
@@ -39,47 +43,47 @@ As seen above in the CSS from the example, this truly is a very easy way to rear
 Going the opposite direction, being a desktop first website, and having to scale down to mobile one can remove sections as shown in this [example](https://repl.it/@NickCStaggs/CSS-Grid-Remove-Section). 
 ```css
 .item-a {
-  grid-area: header;
-  background-color: lightblue;
+    grid-area: header;
+    background-color: lightblue;
 }
 .item-b {
-  grid-area: main;
-  background-color: lightcoral;
+    grid-area: main;
+    background-color: lightcoral;
 }
 .item-c {
-  grid-area: sidebar;
-  background-color: lightgoldenrodyellow;
+    grid-area: sidebar;
+    background-color: lightgoldenrodyellow;
 }
 .item-d {
-  grid-area: footer;
-  background-color: lightgreen;
+    grid-area: footer;
+    background-color: lightgreen;
 }
 
 body {
-  display: grid;
-  grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "main main . sidebar"
+        "footer footer footer footer";
 }
 
 @media (max-width: 600px) {
-  body {
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+    body {
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
 
-    grid-template-columns: 100vw;
-  }
+        grid-template-columns: 100vw;
+    }
 }
 ```
 One thing that you'll notice is how descriptive of the final product the `grid-template-areas` sytax is, what you see in your CSS is what you see rendered on the page which removes a lot of the guesswork normally involved in CSS. Also, notice how simple it was to completely rearrange the layout to fit the mobile form factor. All that I did was redefine the template areas to remove the white space and the sidebar and the page renders just like that. 
 
 And now onto the question I'm sure a lot of people reading this are wondering: how does this work with javascript frameworks such as React, Angular and Vue? I am delighted to say, quite easily. You really don't have to change a thing except adding the CSS rules including the media query. You can even complement this technique with the `window.matchMedia` API to change components to render differently depending on the form factor in addition to changing the layout. An example of this using React is my [NYC Taxi project](https://github.com/nickstaggs/nyc-taxi-2017-frontend/blob/develop/src/toolbar/ZoneCard.js).
-```JSX
+```jsx
 class ZoneCardContainer extends React.Component {
     state = {
         loading: false, 

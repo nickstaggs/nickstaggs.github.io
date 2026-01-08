@@ -48,20 +48,22 @@
                     </div>
                 </div>
             </nav>
-            <div class="m-2">
-                {{ content }}
+            <div class="row px-2">
+                <div class="col-12 col-md-8 mx-auto">
+                    {{ content }}
+                </div>
             </div>
         </div>
         <div class="only-desktop">
             <div class="m-3 row">
-                <div class="col-3">
+                <div class="col-2 sidebar">
                     <div class="sticky">
                         <div class="center-headshot">
                             <img class="headshot" src="/assets/images/headshot.jpg">
                         </div>
                         <h2 class="my-4 text-center"><router-link to="/" class="no-style">Nick Staggs</router-link></h2>
                         <p class="my-4">
-                            Just your typical coffee addicted software engineer. Exploring the intracacies and whimsies
+                            Just your typical coffee addicted software engineer. Exploring the intricacies and whimsies
                             of the web, one cup at a time.
                         </p>
                         <span class="separation-line mt-4 mb-3"></span>
@@ -78,7 +80,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-9">
+                <div class="col-7 mx-auto">
                     {{ content }}
                 </div>
             </div>
