@@ -10,5 +10,4 @@ function updateTheme() {
     document.querySelector("html").setAttribute("data-bs-theme", colorMode);
 }
 
-
 updateTheme()
