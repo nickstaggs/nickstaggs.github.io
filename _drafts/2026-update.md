@@ -1,0 +1,39 @@
+---
+layout: default
+title:  "2026 Update"
+date:   2026-01-08 13:29:23 -0400
+summary: First post in a while. One that describes a bit of what I have been up to as well as some goals I have for 2026.
+categories: blog
+---
+
+## {{ page.title }}
+#### {{ page.date | date: "%-d %B %Y" }}
+
+Whoa boy does a lot change in 6 years... Covid, the rise of LLMs, I bought a house, I got married, and I have started at and left 2 different companies. 
+
+
+The last time I wrote a post was about 3 months before the world shut down due to the COVID-19 pandemic and about 5 months from when I closed on my current home. The latter of those two is probably the biggest reason why I have neglected this site. Although I will say I did migrate the site over from the [over engineered monstrosity](/blog/2019/05/26/this-site.html) that it once was to a [jekyll](https://jekyllrb.com/) generated static site. Overall though I have not even come close to writing another post because of how much work I have done on the turn of the century(the 20th, not the most recent one) house that I closed on in May of 2020. I could probably write a whole book about the renovations which aren't even done yet but I'll leave you with the tl;dr, old house woes and pesky termites. That along with just life in general took up nearly all of the time I had outside of work to work on things like this site.
+
+
+Speaking of work, at the beginning of 2022 I had decided it was time to move on from ASI and work on something that was more of an internet scale, you know distributed systems, microservices and such. So I started a job search and ended up accepting a senior software engineer position at [Mural](https://www.mural.co/) which, as virtual collaboration tool, exploded during the pandemic. Unfortunately, that was very short lived, about 4 months, as the world started opening up again companies started coming back into the office and no longer needed a virtual collaboration tool. So me along with about a third of the company found ourselves without a job. Thankfully, after not too long a while I ended up landing another senior software position at [Toast](https://pos.toasttab.com/). I spent a wonderful two and a half years helping restaurants integrate with third party ordering providers like UberEats, DoorDash, GrubHub and Google. I worked on services receiving millions of requests a day and learned a whole lot. Sadly, I was caught up in another layoff at the end of June in 2025 and have been looking for a job ever since. 
+
+
+Like a roller coaster ride, my layoff dovetailed into my wedding which I can honestly say was the happiest day of my life. We had a smallish ceremony just outside of Glacier National Park and got to spend several days celebrating and enjoying the wonders that Glacier has to offer. 
+
+
+After looking back at the last six years I now want to look to the future and what this year might hold. I want to be more purposeful about that by creating some statements of intention as well as some goals to cement them:
+
+1. I want to engage my mind with new ideas and ways of thinking as well as learn to better express my own.
+    * Read 12 books for pleasure
+    * Write 6 blog posts
+
+You probably now see the "why now" of this blog post. It is a goal of mine to write and read more. I feel like I may have become a little complacent and insular over the last 6 years. I don't want to be too hard on myself but outside of work I think I have become intellectually stagnant and I want to break out of that.
+
+2. I want to know where the software industry is headed and how secure my career is over the next decade. 
+    * Read 50 software related academic papers with a focus in LLMs
+    * Read 4 software related books
+
+Of course no blog post these days would be complete without the mention of artificial intelligence. LLMs are both a revelatory technology and possibly an existential threat to my career and possibly humanity. I have spent the last 6 months yo-yoing between believing that LLMs will just be another tool in the toolbox and wondering if I need to find another career. It has really been a confounding and tumultuous time in my life. Hopefully, with some better knowledge on the subject I can be better equipped to chart my path forward.
+
+
+If you have gotten this far, thank you so much for reading! It really means a lot and feel free to drop me a line if any of this resonated with you or you want to discuss further. And as always, happy hacking!
