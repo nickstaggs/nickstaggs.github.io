@@ -1,11 +1,13 @@
 - name: Home
   link: /
 - name: About
-  link: /about.html
+  link: /about
 - name: Blog
-  link: /blog.html
+  link: /blog
+- name: Book Reviews
+  link: /book-reviews
 - name: Resume
-  link: /resume.html
+  link: /resume
 - name: GitHub
   link: https://github.com/nickstaggs
   external: true
