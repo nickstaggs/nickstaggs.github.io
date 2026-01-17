@@ -80,7 +80,7 @@ body {
     }
 }
 ```
-One thing that you'll notice is how descriptive of the final product the `grid-template-areas` sytax is, what you see in your CSS is what you see rendered on the page which removes a lot of the guesswork normally involved in CSS. Also, notice how simple it was to completely rearrange the layout to fit the mobile form factor. All that I did was redefine the template areas to remove the white space and the sidebar and the page renders just like that. 
+One thing that you'll notice is how descriptive of the final product the `grid-template-areas` syntax is, what you see in your CSS is what you see rendered on the page which removes a lot of the guesswork normally involved in CSS. Also, notice how simple it was to completely rearrange the layout to fit the mobile form factor. All that I did was redefine the template areas to remove the white space and the sidebar and the page renders just like that. 
 
 And now onto the question I'm sure a lot of people reading this are wondering: how does this work with javascript frameworks such as React, Angular and Vue? I am delighted to say, quite easily. You really don't have to change a thing except adding the CSS rules including the media query. You can even complement this technique with the `window.matchMedia` API to change components to render differently depending on the form factor in addition to changing the layout. An example of this using React is my [NYC Taxi project](https://github.com/nickstaggs/nyc-taxi-2017-frontend/blob/develop/src/toolbar/ZoneCard.js).
 ```jsx
@@ -142,7 +142,7 @@ In the above example from the NYC taxi project I have two different views for th
 
 ![NYC Taxi Mobile](/assets/images/nyc-taxi-mobile.png)
 
-Some of you may be thinking there are better ways of doing this such as just having a separate mobile site or using a JS libary such as Bootstrap to scale between form factors. I have a couple thoughts on this.
+Some of you may be thinking there are better ways of doing this such as just having a separate mobile site or using a JS library such as Bootstrap to scale between form factors. I have a couple thoughts on this.
 
 In some cases having a separate mobile site may be the way to go but I feel in most cases it is overkill. Really the only time, that a separate mobile site is a prudent choice is when the layout, color ways and even functionality is different on the mobile site where trying to fit that into media queries and changing components would be too complex. This is not the case for most sites though. Usually, one is just changing the layout which we have seen can be handled quite simply using the union of CSS Grid and media queries. 
 

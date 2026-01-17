@@ -4,6 +4,8 @@
   link: /about.html
 - name: Blog
   link: /blog.html
+- name: Book Reviews
+  link: /book-reviews/
 - name: Resume
   link: /resume.html
 - name: GitHub
