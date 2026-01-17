@@ -31,19 +31,6 @@ collections:
     output: true
     permalink: /book-reviews/:title
 
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: default
-      permalink: /blog/:title
-  - scope:
-      path: ""
-      type: "book_reviews"
-    values:
-      layout: default
-
 # Build settings
 plugins:
   - jekyll-feed

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About
-permalink: /about/
 ---
 
 I am a software engineer with a focus in Kotlin, C# and TypeScript/Javascript programming languages and utilizing them build web applications in the cloud. However, I am not afraid to learn something new and to use the right tool for the job.
