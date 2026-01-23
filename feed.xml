@@ -19,7 +19,7 @@ layout: null
     <link href="{{ site.url }}{{ item.url }}"/>
     <id>{{ site.url }}{{ item.url }}</id>
     <updated>{{ item.date | date_to_xmlschema }}</updated>
-    <summary>{{ item.summary }}</summary>
+    <summary>{{ item.summary | xml_escape }}</summary>
     <content type="html">
       {{ item.content | xml_escape }}
     </content>
