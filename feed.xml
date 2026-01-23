@@ -26,7 +26,7 @@ layout: null
         </author>
         <summary>{{ item.summary | xml_escape }}</summary>
         <content type="html">
-            <![CDATA[ {{ item.content }} ]]>
+            <![CDATA[{{ item.content }}]]>
         </content>
     </entry>
     {% endfor %}
