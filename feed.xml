@@ -8,7 +8,9 @@ layout: null
   <link href="{{ site.url }}/feed.xml" rel="self"/>
   <link href="{{ site.url }}"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <author>{{ site.author }}</author>
+  <author>
+    <name>{{ site.author }}</name>
+  </author>
   <id>{{ site.url }}/</id>
 
   {% assign all_items = site.posts | concat: site.book_reviews | sort: "date" | reverse %}
