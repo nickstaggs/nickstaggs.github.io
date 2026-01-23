@@ -1,0 +1,33 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ site.title | xml_escape }}</title>
+    <subtitle>{{ site.description | xml_escape }}</subtitle>
+    <link href="{{ site.url }}/feed.xml" rel="self"/>
+    <link href="{{ site.url }}"/>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <author>
+        <name>{{ site.author }}</name>
+    </author>
+    <id>{{ site.url }}/</id>
+
+    {% assign all_items = site.posts | concat: site.book_reviews | sort: "date" | reverse %}
+
+    {% for item in all_items limit:20 %}
+    <entry>
+        <title>{{ item.title | xml_escape }}</title>
+        <link href="{{ site.url }}{{ item.url }}"/>
+        <id>{{ site.url }}{{ item.url }}</id>
+        <updated>{{ item.date | date_to_xmlschema }}</updated>
+        <author>
+            <name>{{ site.author }}</name>
+        </author>
+        <summary>{{ item.summary | xml_escape }}</summary>
+        <content type="html">
+            <![CDATA[{{ item.content }}]]>
+        </content>
+    </entry>
+    {% endfor %}
+</feed>
