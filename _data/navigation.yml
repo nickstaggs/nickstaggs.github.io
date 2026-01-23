@@ -16,3 +16,7 @@
   link: https://www.linkedin.com/in/nickstaggs
   external: true
   icon: <i class="bi bi-linkedin"></i>
+- name: RSS
+  link: /feed.xml
+  external: true
+  icon: <i class="bi bi-rss"></i>
